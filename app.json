@@ -1,0 +1,128 @@
+{
+      "name": "bot",
+      "description": "Telegram group management bot.",
+      "keywords": [
+         "telegram",
+         "bot",
+      ],   
+   "repository": "https://github.com/EmiliaDevs/Alita_Robot",
+   "addons": [
+      {
+         "options": {
+            "version": "12"
+         },
+         "plan": "heroku-postgresql"
+      }
+   ],
+   "env": {
+      "TOKEN": {
+         "description": "Your bot token. Get one from @BotFather duh",
+         "required": true,
+         "value": ""
+      },
+      "API_ID": {
+         "description": "Get API_ID from my.telegram.org, used for telethon based modules.",
+         "required": true,
+         "value": ""
+      },
+      "API_HASH": {
+         "description": "Get API_HASH from my.telegram.org, used for telethon based modules.",
+         "required": true,
+         "value": ""
+      },    
+      "SQLALCHEMY_DATABASE_URI": {
+         "description": "Your postgres sql db, empty this field if you dont have one.",
+         "required": false,
+         "value": "sqldbtype://username:pw@hostname:port/db_name"
+      },      
+      "OWNER_ID": {
+         "description": "Your user ID as an integer.",
+         "required": true,
+         "value": "792109647"
+      },
+      "OWNER_USERNAME": {
+         "description": "Your username without the @",
+         "value": "Sawada"
+      },
+      "SUPPORT_CHAT": {
+         "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to saitama support than consider you made an enemy.",
+         "required": true,
+         "value": "MyAwesomeSupportGroupGoesHere"
+      },
+      "SUPPORT_CHANNEL": {
+         "description": "Your Telegram support channel chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to saitama support than consider you made an enemy.",
+         "required": true,
+         "value": "MyAwesomeSupportGroupGoesHere"
+      },      
+      "MESSAGE_DUMP": {
+         "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
+         "required": true,
+         "value": "-123456798"
+      },      
+      "DEV_USERS": {
+         "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Saitama support then keep the current ID's here at they are and add yours.",
+         "required": false,
+         "value": ""
+      },
+      "SUDO_USERS": {
+         "description": "A space separated list of user IDs who you want to assign as sudo users.",
+         "required": false,
+         "value": ""
+      },
+      "PORT": {
+         "description": "Port to use for your webhooks. Better leave this as it is on heroku",
+         "required": false,
+         "value": ""
+      },
+      "URL": {
+         "description": "The Heroku App URL :-  https://<appname>.herokuapp.com/",
+         "required": false,
+         "value": ""
+      },
+      "NO_LOAD": {
+         "description": "Dont load these modules cause they shit, space separation",
+         "required": false,
+         "value": "cleaner rss connection"
+      }, 
+      "ENABLED_LOCALES": {
+         "description": "list langs",
+         "required": true,
+         "value": ""
+      },
+      "REDIS_HOST": {
+         "description": "redis",
+         "value": ""
+         "required": true,         
+      },
+      "REDIS_PORT": {
+         "description": "redis",
+         "value": ""
+         "required": true,         
+      },
+      "REDIS_PASS": {
+         "description": "redis",
+         "value": ""
+         "required": true,         
+      },      
+      "PREFIX_HANDLER": {
+         "description": "handers with space",
+         "value": ""
+         "required": true,         
+      }, 
+      "DEV_PREFIX_HANDLER": {
+         "description": "handers with space (devs)",
+         "value": ""
+         "required": true,         
+      },       
+      "WORKERS": {
+         "description": "WORKERS",
+         "value": "8"
+         "required": true,         
+      },       
+      "VERSION": {
+         "description": "VERSION",
+         "value": "1"
+         "required": true,         
+      },       
+   }
+}
