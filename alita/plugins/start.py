@@ -74,7 +74,7 @@ async def start(c: Alita, m: Message):
                 + [
                     InlineKeyboardButton(
                         "➕ " + _("start.add_chat_btn"),
-                        url=f"https://t.me/{me.username}?startgroup=new",
+                        url=f"https://t.me/{me.username}?startgroup=true",
                     )
                 ],
             ]
