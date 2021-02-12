@@ -91,38 +91,38 @@
       },
       "REDIS_HOST": {
          "description": "redis",
-         "value": ""
-         "required": true,         
+         "value": "",
+         "required": true         
       },
       "REDIS_PORT": {
          "description": "redis",
-         "value": ""
-         "required": true,         
+         "value": "",
+         "required": true         
       },
       "REDIS_PASS": {
          "description": "redis",
-         "value": ""
-         "required": true,         
+         "value": "",
+         "required": true         
       },      
       "PREFIX_HANDLER": {
          "description": "handers with space",
-         "value": ""
-         "required": true,         
+         "value": "",
+         "required": true         
       }, 
       "DEV_PREFIX_HANDLER": {
          "description": "handers with space (devs)",
-         "value": ""
-         "required": true,         
+         "value": "",
+         "required": true         
       },       
       "WORKERS": {
          "description": "WORKERS",
-         "value": "8"
-         "required": true,         
+         "value": "8",
+         "required": true         
       },       
       "VERSION": {
          "description": "VERSION",
-         "value": "1"
-         "required": true,         
-      },       
+         "value": "1",
+         "required": true         
+      }       
    }
 }
